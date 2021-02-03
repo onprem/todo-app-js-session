@@ -1,0 +1,88 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+input, button {
+  font-family: inherit;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.form {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15vh 0;
+  background: #5E60CE;
+  /* background: #4EA8DE;
+  background: #56CFE1;
+  background: #72EFDD;
+  background: #80FFDB; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoInput {
+  width: 32rem;
+  max-width: 90%;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1.2rem;
+}
+
+.todos {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem 30%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.todo {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem 2rem;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: black 2px solid;
+  border-radius: 0.6rem;
+}
+
+.todoBody {
+  display: flex;
+  width: 100%;
+}
+
+.todoBody > p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.todoBody > input {
+  display: none;
+}
+
+.todoBody > input:checked + p {
+  text-decoration: line-through;
+  font-style: italic;
+  opacity: 0.5;
+}
+
+.todo > button {
+  background: none;
+  border: none;
+}
+
+.todo > button > img {
+  height: 1.6rem;
+}
